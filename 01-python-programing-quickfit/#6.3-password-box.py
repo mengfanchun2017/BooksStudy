@@ -1,14 +1,3 @@
-## example in books show a wrong pic, code is ok. Beautiful output!
-def printPicnic(itemsDict, leftWidth, rightWidth):
-    print('PICNIC ITEMS'.center(leftWidth + rightWidth, '-'))
-    for k, v in itemsDict.items():
-        print(k.ljust(leftWidth, '.') + str(v).rjust(rightWidth))
-
-picnicItems = {'sandwiches': 4, 'apples': 12, 'cups': 4, 'cookies': 8000}
-printPicnic(picnicItems, 12, 5)
-printPicnic(picnicItems, 20, 6)
-
-##pw.py
 #! python3
 # pw.py - An insecure password locker program.
 ## first line is used to work with sys.argv
@@ -30,3 +19,15 @@ if account in PASSWORDS:
     print('Password for ' + account + ' copied to clipboard.')
 else:
     print('There is no account named ' + account)
+
+## example in books show a wrong pic, code is ok. Beautiful output!
+def printPicnic(itemsDict, leftWidth, rightWidth):
+    print('PICNIC ITEMS'.center(leftWidth + rightWidth, '-'))
+    for k, v in itemsDict.items():
+        print(k.ljust(leftWidth, '.') + str(v).rjust(rightWidth))
+
+picnicItems = {'sandwiches': 4, 'apples': 12, 'cups': 4, 'cookies': 8000}
+printPicnic(picnicItems, 12, 5)
+printPicnic(picnicItems, 20, 6)
+
+## problems: sys not recg #! python3, later
