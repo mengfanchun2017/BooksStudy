@@ -3,6 +3,18 @@
 ## first line is used to work with sys.argv
 ## sys.argv brief
 ## http://www.cnblogs.com/cython/articles/2196715.html
+## example in books show a wrong pic, code is ok. Beautiful output!
+picnicItems = {'sandwiches': 4, 'apples': 12, 'cups': 4, 'cookies': 8000}
+
+def printPicnic(itemsDict, leftWidth, rightWidth):
+    print('PICNIC ITEMS'.center(leftWidth + rightWidth, '-'))
+    for k, v in itemsDict.items():
+        print(k.ljust(leftWidth, '.') + str(v).rjust(rightWidth))
+
+
+printPicnic(picnicItems, 12, 5)
+printPicnic(picnicItems, 20, 6)
+
 PASSWORDS = {'email': 'F7minlBDDuvMJuxESSKHFhTxFtjVB6',
              'blog': 'VmALvQyKAxiVH5G8v01if1MLZF3sdt',
              'luggage': '12345'}
@@ -20,14 +32,6 @@ if account in PASSWORDS:
 else:
     print('There is no account named ' + account)
 
-## example in books show a wrong pic, code is ok. Beautiful output!
-def printPicnic(itemsDict, leftWidth, rightWidth):
-    print('PICNIC ITEMS'.center(leftWidth + rightWidth, '-'))
-    for k, v in itemsDict.items():
-        print(k.ljust(leftWidth, '.') + str(v).rjust(rightWidth))
 
-picnicItems = {'sandwiches': 4, 'apples': 12, 'cups': 4, 'cookies': 8000}
-printPicnic(picnicItems, 12, 5)
-printPicnic(picnicItems, 20, 6)
 
 ## problems: sys not recg #! python3, later
