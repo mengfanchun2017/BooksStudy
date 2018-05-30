@@ -2,11 +2,7 @@ tabledata = [['apples','oranges','cherries','banana'],\
 ['Alice','Bob','Carol','David'],\
 ['dogs','cats','moose','goose']]
 
-
-
 colwidth = [0]*len(tabledata)
-print(colwidth)
-
 
 def ptable(tabledata):
 	#colwidth = [0]*len(tabledata)
@@ -23,24 +19,18 @@ def ptable(tabledata):
 				pass
 			ii = ii-1
 		colwidth[i] = n
-		print('colwidth',colwidth[i])
+		#print('colwidth',colwidth[i])
 		i = i-1
-		print(colwidth)
-
+		#print(colwidth)
 ptable(tabledata)
 print(colwidth)
-print(tabledata)
 
-i = 3
-while i > 0:
-	print(tabledata[0][0].rjust(colwidth[0]) + ' ' + tabledata[1][0].ljust(colwidth[1]+1) + tabledata[2][0].ljust(colwidth[2]+1))
-	
+def showitem1():
+	i = 0
+	while i <= len(tabledata):
+		print(tabledata[0][i].rjust(colwidth[0]) + ' ' + tabledata[1][i].ljust(colwidth[1]+1) + tabledata[2][i].ljust(colwidth[2]))
+		i = i+1
+showitem1()
 
-def printPicnic(itemsDict, leftWidth, rightWidth):
-    print('PICNIC ITEMS'.center(leftWidth + rightWidth, '-'))
-    for k, v in itemsDict.items():
-        print(k.ljust(leftWidth, '.') + str(v).rjust(rightWidth))
-
-#printPicnic(picnicItems, 12, 5)
-#printPicnic(picnicItems, 20, 6)
+#本想写一个遍历n*m列的阵列，但是很别扭。感觉不是这样实现，drop
 
