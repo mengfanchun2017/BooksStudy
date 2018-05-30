@@ -2,20 +2,11 @@ tabledata = [['apples','oranges','cherries','banana'],\
 ['Alice','Bob','Carol','David'],\
 ['dogs','cats','moose','goose']]
 
-## example in books show a wrong pic, code is ok. Beautiful output!
-picnicItems = {'sandwiches': 4, 'apples': 12, 'cups': 4, 'cookies': 8000}
 
-def printPicnic(itemsDict, leftWidth, rightWidth):
-    print('PICNIC ITEMS'.center(leftWidth + rightWidth, '-'))
-    for k, v in itemsDict.items():
-        print(k.ljust(leftWidth, '.') + str(v).rjust(rightWidth))
-
-#printPicnic(picnicItems, 12, 5)
-#printPicnic(picnicItems, 20, 6)
 
 colwidth = [0]*len(tabledata)
 print(colwidth)
-colwidth = [0]*len(tabledata)
+
 
 def ptable(tabledata):
 	#colwidth = [0]*len(tabledata)
@@ -38,4 +29,18 @@ def ptable(tabledata):
 
 ptable(tabledata)
 print(colwidth)
+print(tabledata)
+
+i = 3
+while i > 0:
+	print(tabledata[0][0].rjust(colwidth[0]) + ' ' + tabledata[1][0].ljust(colwidth[1]+1) + tabledata[2][0].ljust(colwidth[2]+1))
+	
+
+def printPicnic(itemsDict, leftWidth, rightWidth):
+    print('PICNIC ITEMS'.center(leftWidth + rightWidth, '-'))
+    for k, v in itemsDict.items():
+        print(k.ljust(leftWidth, '.') + str(v).rjust(rightWidth))
+
+#printPicnic(picnicItems, 12, 5)
+#printPicnic(picnicItems, 20, 6)
 
