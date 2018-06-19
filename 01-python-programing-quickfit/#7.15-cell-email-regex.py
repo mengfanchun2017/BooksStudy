@@ -12,6 +12,9 @@
 #http://www.diveintopython.net/regular_expressions/verbose.html
 #regex中文文档摘译
 #http://www.cnblogs.com/jcli/archive/2013/06/16/3137798.html
+#regex先compile后match的好处：分离rex和使用，可充用变量，节省时间，参考链接：
+#https://stackoverflow.com/questions/452104/is-it-worth-using-pythons-re-compile/452142#452142
+#推荐！在线regex练习：https://regexr.com
 
 '''
 ?匹配零次或一次前面的分组
