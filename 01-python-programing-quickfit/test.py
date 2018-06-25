@@ -1,3 +1,1 @@
-import random
-#help(random.randint)
-print(random.randint.__doc__)
+help(print)

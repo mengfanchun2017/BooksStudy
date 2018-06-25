@@ -18,6 +18,7 @@ print(str2.strip())
 print(str2.strip('!'))
 
 print('\n---使用连接符---')
+#中间的|表示或者
 def strip_new(text, chars=None):
     """去除首尾的字符
 
