@@ -1,5 +1,4 @@
-# python_for_data_analysis_2nd_chinese_version
-
+# 《利用Python进行数据分析（第二版）》代码实现
 ## 特别推荐
 
 本书作者是 pandas 作者写的，可以加深对 pandas 的理解。
