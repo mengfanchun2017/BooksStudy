@@ -10,13 +10,17 @@
 
 ## 特别感谢中文版本资源的提供
 
-https://github.com/iamseancheney/python_for_data_analysis_2nd_chinese_version
+- https://github.com/iamseancheney/python_for_data_analysis_2nd_chinese_version
+- 中文资源及英文原版均在上面链接中有提供，为了便于学习，附上英文版本pdf，中文的需要点链接进入目录点开每一章的文件。
 
-中文资源及英文原版均在上面链接中有提供，为了便于学习，附上英文版本pdf，中文的需要点链接进入目录点开每一章的文件。
+## 代码运行
+
+- 所有数据资源都在/datasets/下，如果要本地跑，请一并下载数据。
+- 本地没有环境可以将ipynb和数据文件上传到microsoft azure上运行。
 
 ## 内容说明
 
-本仓库基于本书的 ipynb 代码，按照章节在 python3.6 环境下运行测试并增加了注释和少量内容，不包括图书中的内容。并同时提供 html 版本便于直接观察结果。
+- 本仓库基于本书的 ipynb 代码，按照章节在 python3.6 环境下运行测试并增加了注释和少量内容，不包括图书中的内容。并同时提供 html 版本便于直接观察结果。
 
 
 
