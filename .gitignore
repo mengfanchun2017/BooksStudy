@@ -5,3 +5,4 @@
 # use ! to mark retention
 # use doc/*.txt for files under folders
 # use doc/**.txt for files under all sub folders (recrusive)
+.DS_Store
