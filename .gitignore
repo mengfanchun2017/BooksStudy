@@ -19,8 +19,10 @@ build
 
 # My configurations:
 ## mac:
-./DS_Store
-*/.DS_Store/*
+*/.DS_Store
+
+#./DS_Store
+#*/.DS_Store/*
 
 ## windows:
 */Thumbs.db
