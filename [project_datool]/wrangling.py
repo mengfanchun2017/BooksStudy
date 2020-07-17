@@ -131,7 +131,7 @@ def checkvalue(df, list='all'):
         list = df.columns.tolist()
     for i in list:
         print('\n-check column value: {:-^16}'.format(i))
-        print('largest:\n', df[i].value_counts().nlargest(5))
+        print('largest:\n', df[i].value_counts().nlargest(10))
         print('smallest\n:', df[i].value_counts().nsmallest(10))
     print('---checking complete---')
 
